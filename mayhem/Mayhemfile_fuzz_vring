@@ -1,0 +1,6 @@
+project: savantenvs/u-boot-xlnx
+target: fuzz_vring
+cmds:
+  - cmd: /mayhem/fuzz_vring
+    libfuzzer: true
+    timeout: 30

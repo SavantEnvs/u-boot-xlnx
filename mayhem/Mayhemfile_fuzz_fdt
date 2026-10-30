@@ -1,0 +1,9 @@
+project: savantenvs/u-boot-xlnx
+target: fuzz_fdt
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_fdt/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_fdt
+    libfuzzer: true
+    timeout: 30

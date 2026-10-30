@@ -1,0 +1,9 @@
+project: savantenvs/u-boot-xlnx
+target: fuzz_charset
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_charset/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_charset
+    libfuzzer: true
+    timeout: 30

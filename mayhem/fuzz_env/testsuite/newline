@@ -1,0 +1,4 @@
+bootcmd=run bootm
+bootargs=console=ttyS0 root=/dev/sda
+foo=bar
+empty=
